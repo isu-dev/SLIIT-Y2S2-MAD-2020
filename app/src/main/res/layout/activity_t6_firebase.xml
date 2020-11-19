@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".All_Tutorials.T6_Firebase">
+
+    <EditText
+        android:id="@+id/t6_et_id"
+        android:layout_width="365dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Enter your ID"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/t6_et_name"
+        android:layout_width="365dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Enter your Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t6_et_id" />
+
+    <EditText
+        android:id="@+id/t6_et_address"
+        android:layout_width="365dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Enter your Address"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t6_et_name" />
+
+    <EditText
+        android:id="@+id/t6_et_number"
+        android:layout_width="365dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Enter your Phone Number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t6_et_address" />
+
+    <Button
+        android:id="@+id/t6_btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/btn_save"
+        app:layout_constraintEnd_toStartOf="@+id/t6_btn_show"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t6_et_number" />
+
+    <Button
+        android:id="@+id/t6_btn_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_show"
+        app:layout_constraintBaseline_toBaselineOf="@+id/t6_btn_save"
+        app:layout_constraintEnd_toStartOf="@+id/t6_btn_update"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/t6_btn_save" />
+
+    <Button
+        android:id="@+id/t6_btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_update"
+        app:layout_constraintBaseline_toBaselineOf="@+id/t6_btn_show"
+        app:layout_constraintEnd_toStartOf="@+id/t6_btn_delete"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/t6_btn_show" />
+
+    <Button
+        android:id="@+id/t6_btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_delete"
+        app:layout_constraintBaseline_toBaselineOf="@+id/t6_btn_update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/t6_btn_update" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

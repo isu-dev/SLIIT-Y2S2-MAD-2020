@@ -5,4 +5,9 @@
     <string name="tute4">Tutorial 4 - Image Handling</string>
     <string name="txt_construction">Page Under Construction</string>
     <string name="btn_takePhoto">Take a Photo</string>
+    <string name="tute6">Tutorial 6 - Firebase</string>
+    <string name="btn_save">save</string>
+    <string name="btn_show">show</string>
+    <string name="btn_update">update</string>
+    <string name="btn_delete">delete</string>
 </resources>

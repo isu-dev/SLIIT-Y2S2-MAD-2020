@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.y2s2mad">
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".All_Tutorials.T4_ImageHandling"></activity>
+        <activity android:name=".All_Tutorials.T6_Firebase"></activity>
+        <activity android:name=".All_Tutorials.T4_ImageHandling" />
         <activity android:name=".LabSheets" />
         <activity android:name=".Tutorials">
             <intent-filter>
@@ -18,19 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
-
-
-
-    //Tute 4 - Image Handling
-
-    <uses-feature
-        android:name = "android.hardware.camera"
-        android:required = "true" />
-
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 </manifest>
