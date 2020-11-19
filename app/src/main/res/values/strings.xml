@@ -19,4 +19,9 @@
     <string name="btn_selectAll">select all</string>
     <string name="btn_add">add</string>
     <string name="btn_signin">sign in</string>
+    <string name="lab4">Labsheet 4 - Fragments</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_fragment1">fragment 1</string>
+    <string name="btn_fragment2">fragment 2</string>
 </resources>

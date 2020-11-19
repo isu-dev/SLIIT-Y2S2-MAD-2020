@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".LabSheets">
 
-    <TextView
-        android:id="@+id/textView"
+    <Button
+        android:id="@+id/btn_lab4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/txt_construction"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="70dp"
+        android:text="@string/lab4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

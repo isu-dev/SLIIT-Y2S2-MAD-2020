@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Lab_Sheets.L4_Fragments">
+
+    <Button
+        android:id="@+id/l4_btn_fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_fragment1" />
+
+    <Button
+        android:id="@+id/l4_btn_fragment2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_fragment2" />
+
+    <fragment
+        android:id="@+id/L4_fgmntDefault"
+        android:name="com.example.y2s2mad.Lab_Sheets.L4_Fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
