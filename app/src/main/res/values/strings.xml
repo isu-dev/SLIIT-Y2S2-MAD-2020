@@ -13,4 +13,10 @@
     <string name="tute2">Tutorial 2 - Lifecycle</string>
     <string name="Msg1">Here, I am the text message 1</string>
     <string name="Msg2">Here, I am the text message 2</string>
+    <string name="tute5">Tutorial 5 - Data Handling</string>
+    <string name="tv_username">"Username: "</string>
+    <string name="tv_password">Password:</string>
+    <string name="btn_selectAll">select all</string>
+    <string name="btn_add">add</string>
+    <string name="btn_signin">sign in</string>
 </resources>

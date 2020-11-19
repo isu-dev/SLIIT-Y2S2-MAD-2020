@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".All_Tutorials.T2_Lifecycle"></activity>
+        <activity android:name=".All_Tutorials.T5_DataHandling"></activity>
+        <activity android:name=".All_Tutorials.T2_Lifecycle" />
         <activity android:name=".All_Tutorials.T6_Firebase" />
         <activity android:name=".All_Tutorials.T4_ImageHandling" />
         <activity android:name=".LabSheets" />
