@@ -9,15 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LabSheets"></activity>
-        <activity android:name=".Tutorials" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".All_Tutorials.T4_ImageHandling"></activity>
+        <activity android:name=".LabSheets" />
+        <activity android:name=".Tutorials">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity">
+
+        </activity>
     </application>
+
+
+
+    //Tute 4 - Image Handling
+
+    <uses-feature
+        android:name = "android.hardware.camera"
+        android:required = "true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 </manifest>
