@@ -2,6 +2,7 @@ package com.example.y2s2mad.All_Tutorials;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -18,7 +19,8 @@ public class T5_DataHandling extends AppCompatActivity {
 
     EditText t5_et_username, t5_et_password;
     Button t5_btn_selectAll, t5_btn_add, t5_btn_signIn, t5_btn_delete,  t5_btn_update;
-    DBHandler dbHandler;
+
+    DBHandler dbHandler =  new DBHandler(this);
     String username;
     String password;
 

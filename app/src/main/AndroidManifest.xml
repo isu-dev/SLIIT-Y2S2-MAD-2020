@@ -15,20 +15,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Lab_Sheets.L4_Fragments"></activity>
+        <activity android:name=".Lab_Sheets.L12_Login"></activity>
+        <activity android:name=".All_Tutorials.T7_Kotlin" />
+        <activity android:name=".Lab_Sheets.L4_Fragments" />
         <activity android:name=".All_Tutorials.T5_DataHandling" />
         <activity android:name=".All_Tutorials.T2_Lifecycle" />
         <activity android:name=".All_Tutorials.T6_Firebase" />
         <activity android:name=".All_Tutorials.T4_ImageHandling" />
-        <activity android:name=".LabSheets">
+        <activity android:name=".LabSheets"></activity>
+        <activity android:name=".Tutorials" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Tutorials"></activity>
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

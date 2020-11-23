@@ -24,4 +24,10 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="btn_fragment1">fragment 1</string>
     <string name="btn_fragment2">fragment 2</string>
+    <string name="tute7">Tutorial 7 - Kotlin</string>
+    <string name="t7_title">Enter your year of birth</string>
+    <string name="btn_submit">submit</string>
+    <string name="t7_title_year">Your age in years:</string>
+    <string name="l12_app_title">The CourseApp</string>
+    <string name="btn_register">register</string>
 </resources>

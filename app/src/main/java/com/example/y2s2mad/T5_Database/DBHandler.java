@@ -35,21 +35,15 @@ public class DBHandler extends SQLiteOpenHelper {
 
     public void addInfo(String userName, String password) {
         //gets the data repository in write mode
-        Log.i("Add Info", "Reached method");
         SQLiteDatabase db = getWritableDatabase();
-        Log.i("Add Info", "1");
 
         //create a new map of values, where column names the keys
         ContentValues values = new ContentValues();
-        Log.i("Add Info", "2");
         values.put(UsersMaster.Users.COLUMN_NAME_USERNAME, userName);
-        Log.i("Add Info", "3");
         values.put(UsersMaster.Users.COLUMN_NAME_PASSWORD, password);
-        Log.i("Add Info", "4");
 
         //insert the new row, returning the primary key value of the new row
         long newRowId = db.insert(UsersMaster.Users.TABLE_NAME, null, values);
-        Log.i("Add Info", "Leaving method");
     }
 
     public List readAllInfo() {
@@ -111,10 +105,17 @@ public class DBHandler extends SQLiteOpenHelper {
         };
 
         //   filter results WHERE "userName" = username
-        String selection = UsersMaster.Users.COLUMN_NAME_USERNAME + " = ?" +
-                    UsersMaster.Users.COLUMN_NAME_PASSWORD + " = ?";
-        String[] selectionArgs = {username, password};
+        String selection = UsersMaster.Users.COLUMN_NAME_USERNAME + " = ? "; /*+ "and " +
+                    UsersMaster.Users.COLUMN_NAME_PASSWORD + " = ?";*/
+        String[] selectionArgs = {username /*, password*/};
 
+        /*Log.i("Username", username);
+        Log.i("Password", password);
+        Log.i("Selection", selection);
+        for(int i = 0 ; i < selectionArgs.length ; ++i)
+            Log.i("Selection Args", selectionArgs[i]);
+
+        Log.i("Check", "starting cursor"); */
 
         Cursor cursor = db.query(
                 UsersMaster.Users.TABLE_NAME,       //the table to query
@@ -127,6 +128,22 @@ public class DBHandler extends SQLiteOpenHelper {
         );
 
         boolean found = false;
+
+        //Log.i("Check", "finished cursor");
+
+        String cursorpassword = "";
+
+        if(cursor != null) {
+            cursor.moveToFirst();
+
+            cursorpassword = cursor.getString(cursor.getColumnIndexOrThrow(UsersMaster.Users.COLUMN_NAME_PASSWORD));
+
+           /* Log.i("Cursor username", cursor.getString(cursor.getColumnIndexOrThrow(UsersMaster.Users.COLUMN_NAME_USERNAME)));
+            Log.i("Cursor password", cursorpassword);*/
+
+            if(cursorpassword.contentEquals(password))
+                found = true;
+        }
 
         return found;
     }
