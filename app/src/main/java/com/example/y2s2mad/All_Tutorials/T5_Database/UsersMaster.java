@@ -1,4 +1,4 @@
-package com.example.y2s2mad.T5_Database;
+package com.example.y2s2mad.All_Tutorials.T5_Database;
 
 import android.provider.BaseColumns;
 

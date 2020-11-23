@@ -2,7 +2,6 @@ package com.example.y2s2mad.All_Tutorials;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -11,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.y2s2mad.R;
-import com.example.y2s2mad.T5_Database.DBHandler;
+import com.example.y2s2mad.All_Tutorials.T5_Database.DBHandler;
 
 import java.util.List;
 

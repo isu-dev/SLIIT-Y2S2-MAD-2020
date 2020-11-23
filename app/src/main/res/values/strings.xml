@@ -30,4 +30,13 @@
     <string name="t7_title_year">Your age in years:</string>
     <string name="l12_app_title">The CourseApp</string>
     <string name="btn_register">register</string>
+    <string name="lab12">Labsheet 12 - Practice Lab</string>
+    <string name="title_register_form">Register Form</string>
+    <string name="title_teacher">Teacher</string>
+    <string name="title_Student">Student</string>
+    <string name="title_welcome">Welcome</string>
+    <string name="title_subject">Subject</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_cancel">cancel</string>
+    <string name="lab5">labsheet 5 - notifications</string>
 </resources>

@@ -4,38 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LabSheets">
+    tools:context=".Lab_Sheets.L5_Notifications">
 
-    <Button
-        android:id="@+id/btn_lab4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:text="@string/lab4"
+    <EditText
+        android:id="@+id/l5_et_name"
+        android:layout_width="308dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="300dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_lab5"
+        android:id="@+id/l5_btn_registerForm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:text="@string/lab5"
+        android:layout_marginTop="50dp"
+        android:text="@string/btn_register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_lab4" />
-
-    <Button
-        android:id="@+id/btn_lab12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:text="@string/lab12"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_lab5" />
+        app:layout_constraintTop_toBottomOf="@+id/l5_et_name" />
 </androidx.constraintlayout.widget.ConstraintLayout>
